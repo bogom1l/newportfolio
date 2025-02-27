@@ -1,0 +1,71 @@
+---
+
+const currentYear = 2025;
+
+const name = "Alfred";
+const town = "Varna";
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfred The Lawyer of Transport</title>
+    <link rel="stylesheet" href="/src/styles/global.css" />
+    <!-- Tailwind CSS CDN for simplicity -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-50 text-gray-900">
+
+    <header class="p-4 bg-blue-500 text-white">
+      <nav class="container mx-auto flex justify-between items-center">
+        <ul class="flex space-x-4">
+          <li><a href="/" class="hover:underline">Home</a></li>
+          <li><a href="/about" class="hover:underline">About</a></li>
+          <li><a href="/projects" class="hover:underline">Projects</a></li>
+          <li><a href="/contact" class="hover:underline">Contact</a></li>
+        </ul>
+
+        <!-- Menu Button -->
+        <button id="menuBtn" class="bg-gray-700 text-white p-2">Menu</button>
+
+      </nav>
+    </header>
+
+    <!-- Sliding Menu -->
+    <div id="menuContainer" class="fixed inset-0 bg-gray-800 text-white transform -translate-x-full transition-transform duration-300 ease-in-out">
+      <ul class="p-6 space-y-4">
+        <li><a href="/projects" class="hover:bg-gray-600 p-2">Projects</a></li>
+        <li><a href="/about" class="hover:bg-gray-600 p-2">About</a></li>
+        <li><a href="/contact" class="hover:bg-gray-600 p-2">Contact</a></li>
+      </ul>
+    </div>
+
+    <main class="container mx-auto p-4">
+      <slot />
+    </main>
+
+    <footer class="p-4 bg-gray-800 text-white text-center">
+      © {currentYear} My Portfolio
+    </footer>
+
+    <!-- <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const menuContainer = document.getElementById("menuContainer");
+
+      menuBtn.addEventListener("click", () => {
+        // Toggle the sliding menu
+        menuContainer.classList.toggle("-translate-x-full"); // Slide menu in or out
+      });
+    </script> -->
+
+<script src="path/to/menu.js" defer></script>
+
+
+  </body>
+
+</html>
