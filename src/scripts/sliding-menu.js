@@ -1,4 +1,3 @@
-// menu.js
 const menuBtn = document.getElementById("menuBtn");
 const closeBtn = document.getElementById("closeBtn");
 const menuContainer = document.getElementById("menuContainer");
