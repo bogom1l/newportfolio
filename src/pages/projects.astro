@@ -1,72 +1,120 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-
-  <section class="py-8">
-
-    <h1 class="text-3xl font-bold mb-4">My Projects</h1>
-    
-    <ul class="space-y-4">
-      <li>
-        <h2 class="text-xl font-semibold">Project One</h2>
-        <p>Short description of Project One.</p>
-      </li>
-      <li>
-        <h2 class="text-xl font-semibold">Project Two</h2>
-        <p>Short description of Project Two.</p>
-      </li>
-      <li>
-        <h2 class="text-xl font-semibold">Project Two</h2>
-        <p>Short description of Project Two.</p>
-      </li>
-      <li>
-        <h2 class="text-xl font-semibold">Project Two</h2>
-        <p>Short description of Project Two.</p>
-      </li>
-      <li>
-        <h2 class="text-xl font-semibold">Project Two</h2>
-        <p>Short description of Project Two.</p>
-      </li>
-      <li>
-        <h2 class="text-xl font-semibold">Project Two</h2>
-        <p>Short description of Project Two.</p>
-      </li>
-      <li>
-        <h2 class="text-xl font-semibold">Project Two</h2>
-        <p>Short description of Project Two.</p>
-      </li>
-    </ul>
-
-  </section>
+  <!-- Full-page background container -->
+  <div
+    class="min-h-screen w-full bg-cover bg-center"
+    style="background-image: url('/src/assets/lawbooks.jpg');"
+  >
+    <!-- Centered content area -->
+    <main class="container mx-auto px-4 py-8 md:flex md:gap-8">
 
 
-  <section class="py-12">
 
-    <h2> batman </h2>
-    <h1>batman</h1>
-    <h1>batman</h1>
-    <h1>batman</h1>
-    <h1>batman</h1>
-    <h1>batman</h1>
-    <h1>batman</h1>
-    <h1>batman</h1>
-    <h1>batman</h1>
-    <h1>batman</h1>
-    <h1>batman</h1>
-    <h1>batman</h1>
-    <h1>batman</h1>
-    <h1>batman</h1>
-    <h1>batman</h1>
-    <h1>batman</h1>
-    <h1>batman</h1>
-    <h1>batman</h1>
-    <h1>batman</h1>
-    <h1>batman</h1>
-    <h1>batman</h1>
-    <h1>batman</h1>
-    
-  </section>
+
+
+
+      
+      <!-- Left column: Professional Info -->
+      <div class="md:w-2/3 bg-white/85 p-6 shadow-lg">
+        <!-- "Professionals" label or heading -->
+        <div class="mb-4">
+          <span
+            class="inline-block bg-blue-600 text-white px-3 py-1 text-sm font-semibold uppercase rounded"
+          >
+            Professionals
+          </span>
+        </div>
+
+        <!-- Header Info: Name, Membership, Location, Email -->
+        <div class="text-center mb-6">
+          <h1 class="text-5xl font-bold mb-2">J. Scott Gilbert</h1>
+          <div class="flex justify-center items-center space-x-4">
+            <span class="text-xl font-semibold text-gray-700">Member</span>
+            <span class="text-sm text-gray-600">Jackson</span>
+            <span class="text-sm text-blue-600">
+              <a href="mailto:sgilbert@watkinseager.com" class="hover:underline"
+                >sgilbert@watkinseager.com</a
+              >
+            </span>
+          </div>
+        </div>
+
+        <!-- Divider to separate header from bio -->
+        <hr class="border-t border-gray-300 mb-6" />
+
+        <!-- Bio / Description -->
+        <p class="mb-6">
+          Scott Gilbert is a lawyer who represents companies and individuals in
+          complex litigation and transportation law...
+        </p>
+
+        <!-- Example sub-sections -->
+        <h2 class="text-xl font-bold mb-2">
+          Representative Criminal Defense Work
+        </h2>
+        <p class="mb-4">
+          Successfully defended clients in high-profile federal and state
+          cases...
+        </p>
+
+        <h2 class="text-xl font-bold mb-2">Honors & Recognition</h2>
+        <ul class="list-disc list-inside mb-4">
+          <li>Recognized in Best Lawyers in America</li>
+          <li>Super Lawyers Rising Star</li>
+          <li>AV-rated by Martindale-Hubbell</li>
+        </ul>
+
+        <h2 class="text-xl font-bold mb-2">Community & Professional</h2>
+        <p class="mb-4">
+          Member of the Mississippi Bar Association, frequent speaker at
+          transportation law conferences...
+        </p>
+
+        <h2 class="text-xl font-bold mb-2">Articles & Publications</h2>
+        <p class="mb-4">
+          Published articles in the Journal of Transportation Law...
+        </p>
+      </div>
+
+
+
+
+      <!-- Right column: Profile Photo, Practice Areas, etc. -->
+      <aside class="md:w-1/3 bg-white/85 p-6 shadow-lg mt-8 md:mt-0">
+        <!-- Profile Image -->
+        <img
+          src="/src/assets/alfred.jpg"
+          alt="Profile Photo"
+          class="w-full h-auto mb-4"
+        />
+
+        <!-- Practice Areas -->
+        <h2 class="text-xl font-bold mb-2">Practice Areas</h2>
+        <ul class="list-disc list-inside mb-4">
+          <li>Criminal Defense</li>
+          <li>Transportation Law</li>
+          <li>Civil Litigation</li>
+          <li>Regulatory Compliance</li>
+        </ul>
+
+        <!-- Education & Admissions -->
+        <h2 class="text-xl font-bold mb-2">Education & Admissions</h2>
+        <ul class="list-disc list-inside mb-4">
+          <li>J.D., University of Mississippi School of Law</li>
+          <li>Admitted in Mississippi, Alabama, & Tennessee</li>
+        </ul>
+
+        <!-- Awards or Additional Sections -->
+        <h2 class="text-xl font-bold mb-2">Awards</h2>
+        <ul class="list-disc list-inside">
+          <li>Best Lawyers in America</li>
+          <li>Super Lawyers Rising Star</li>
+        </ul>
+      </aside>
+    </main>
+  </div>
 
 </BaseLayout>
