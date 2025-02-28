@@ -12,89 +12,92 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <main class="container mx-auto px-4 py-8 md:flex md:gap-8">
       <!-- Left column: Professional Info -->
       <div class="md:w-2/3 bg-white/85 p-6 shadow-lg px-14 py-15">
-        <!-- Header Info: Name, Membership, Location, Email -->
+        <!-- Header Info -->
         <div class="text-left mb-6">
           <h1 class="text-5xl font-bold mb-2">Alfred Batman</h1>
+
+          <div class="text-3xl font-semibold text-gray-600 mt-4">Lawyer</div>
+
           <div class="space-y-2">
-            <div class="text-3xl font-semibold text-gray-600">Lawyer</div>
-            <div class="text-lg text-gray-600 mt-6">
-              <!-- Address Icon (using img tag) -->
+            <div class="text-lg text-gray-600 mt-8">
               <img
-              src="/src/assets/1.png"
-              alt="Address Icon"
-              class="w-5 h-5 mr-2 inline-block"
-            />
-              
+                src="/src/assets/1.png"
+                alt="Address Icon"
+                class="w-8 h-8 mr-2 inline-block"
+              />
               Fifth Alley Street, Gotham City
             </div>
-  
-            <div class="text-sm text-blue-600 hover:underline">
+
+            <div class="text-lg text-gray-600">
+              <img
+                src="/src/assets/4.png"
+                alt="Phone Icon"
+                class="w-8 h-8 mr-2 inline-block"
+              />
+              088 279 3456
+            </div>
+
+            <div class="text-lg text-blue-600 hover:underline">
+              <img
+                src="/src/assets/2.png"
+                alt="Email Icon"
+                class="w-8 h-8 mr-2 inline-block"
+              />
               alfred@gothamcity.com
             </div>
           </div>
         </div>
 
         <!-- Divider to separate header from bio -->
-        <hr class="border-t border-gray-300 mb-6" />
+        <hr class="border-t border-gray-500 mb-6" />
 
-        <!-- Bio / Description -->
+        <!-- Description -->
         <p class="mb-6">
-          Alfred Wayne is a distinguished litigator specializing in complex
-          litigation across both state and federal courts in Gotham City. Alfred
-          began his illustrious career as a prosecutor in the Gotham District
-          Attorney's Office, serving with distinction for 15 years before
-          establishing his own firm, Wayne & Associates, in 2018. Throughout his
-          career, he has presided over numerous high-profile cases and managed
-          appeals that have tested even the most seasoned legal minds in the
-          city. Beyond traditional litigation, Alfred also offers strategic
-          counsel to major corporations and nonprofit organizations, often
-          advising on matters where the interests of Gotham’s citizens—and its
-          darker underbelly—intersect. Admitted to the Gotham Bar in 2002 and
-          later to the New Jersey Bar in 2010, Alfred’s practice spans internal
-          corporate investigations, white-collar criminal defense, and complex
-          civil litigation, as well as administrative proceedings before
-          Gotham’s regulatory bodies. His extensive experience in prosecuting
-          and defending cases related to organized crime, financial fraud, and
-          asset recovery has solidified his reputation as a pillar of Gotham’s
-          legal community. During his tenure with the Gotham DA’s Office, Alfred
-          was a frequent lecturer on the intricacies of corporate fraud and
-          organized crime, delivering seminars at the city’s premier legal
-          training facilities. He also played a key role in managing asset
-          forfeiture and money laundering cases that targeted some of Gotham’s
-          most notorious criminal networks. In addition to his legal practice,
-          Alfred imparts his vast knowledge as a visiting professor at Gotham
-          University School of Law, mentoring the next generation of legal
-          professionals dedicated to upholding justice in a city that never
-          sleeps.
+          <img src="/src/assets/5.png" alt="Suitcase Icon" class="w-8 h-8 mr-2 inline-block"/>
+          <span class="text-xl text-gray-800 font-semibold">Административно право</span>
+          <br />
+          Нашият екип предлага правна помощ при обжалване на наказателни постановления
+          и административни актове срещу държавни органи като КАТ, НАП, КЗП, КЗЛД
+          и местни власти. Банково право Разрешаваме различни въпроси свързани с
+          кредити – потребителски, фирмени, ипотечни и други. Освен това предоставяме
+          консултации по условията на кредитни договори.
         </p>
 
-        <!-- Example sub-sections -->
-        <h2 class="text-xl font-bold mb-2">
-          Representative Criminal Defense Work
-        </h2>
-        <p class="mb-4">
-          Successfully defended clients in high-profile federal and state
-          cases...
+
+        <p class="mb-6">
+          <img src="/src/assets/6.png" alt="Suitcase Icon" class="w-8 h-8 mr-2 inline-block"/>
+          <span class="text-xl text-gray-800 font-semibold">Вещно право</span>
+          <br />
+          Ако планирате покупка на недвижим имот или имате правен спор,
+          свързан с такъв, нашите юристи ще ви консултират какви стъпки да предприемете.
         </p>
 
-        <h2 class="text-xl font-bold mb-2">Honors & Recognition</h2>
-        <ul class="list-disc list-inside mb-4">
-          <li>Recognized in Best Lawyers in America</li>
-          <li>Super Lawyers Rising Star</li>
-          <li>AV-rated by Martindale-Hubbell</li>
-        </ul>
-
-        <h2 class="text-xl font-bold mb-2">Community & Professional</h2>
-        <p class="mb-4">
-          Member of the Mississippi Bar Association, frequent speaker at
-          transportation law conferences...
+        
+        <p class="mb-6">
+          <img src="/src/assets/7.png" alt="Suitcase Icon" class="w-8 h-8 mr-2 inline-block"/>
+          <span class="text-xl text-gray-800 font-semibold">Търговско и дружествено право</span>
+          <br />
+          Ако имате нужда от регистрация на юридическо
+          лице, НПО или търговска марка, нашите юристи са на ваше разположение. Също
+          така предлагаме помощ при съставяне на търговски договори.
         </p>
 
-        <h2 class="text-xl font-bold mb-2">Articles & Publications</h2>
-        <p class="mb-4">
-          Published articles in the Journal of Transportation Law...
+        <p class="mb-6">
+          <img src="/src/assets/8.png" alt="Suitcase Icon" class="w-8 h-8 mr-2 inline-block"/>
+          <span class="text-xl text-gray-800 font-semibold">Правни консултации</span>
+          <br />
+          Ние предоставяме правни консултации по всякакви въпроси,
+          свързани с българското законодателство и юридическата практика. Може да
+          се доверите на адвокатска кантора "Алфред" за надеждни съвети.
         </p>
+
+
       </div>
+
+
+
+
+      
 
       <!-- Right column: Profile Photo, Practice Areas, etc. -->
       <aside class="md:w-1/3 bg-white/85 p-6 shadow-lg mt-8 md:mt-0">
