@@ -1,37 +1,139 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-
-const name = "Alfred";
-const profession = "Lawyer";
-const town = "Shumen";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
+  <!-- Full-page background container -->
+  <div
+    class="min-h-screen w-full bg-cover bg-center"
+    style="background-image: url('/src/assets/lawbooks.jpg');"
+  >
+    <!-- Centered content area -->
+    <main class="container mx-auto px-4 py-8 md:flex md:gap-8">
+      <!-- Left column: Professional Info -->
+      <div class="md:w-2/3 bg-white/85 p-6 shadow-lg px-14 py-15">
+        <!-- Header Info -->
+        <div class="text-left mb-6">
+          <h1 class="text-5xl font-bold mb-2">Alfred Batman</h1>
 
-    <main class="container mx-auto p-8 grid grid-cols-12 gap-6">
+          <div class="text-3xl font-semibold text-gray-600 mt-4">Lawyer</div>
 
-      <!-- Sidebar -->
-      <aside class="col-span-4 bg-white p-6 rounded-lg shadow-md">
-        <img src="/src/assets/alfred.jpg" alt="Profile" class="w-full rounded-md mb-4" />
-        <h2 class="text-xl font-semibold">{name}</h2>
-        <p class="text-gray-600">{profession}</p>
+          <div class="space-y-2">
+            <div class="text-lg text-gray-600 mt-8">
+              <img
+                src="/src/assets/1.png"
+                alt="Address Icon"
+                class="w-8 h-8 mr-2 inline-block"
+              />
+              Готъм Сити, ул. Джак Напиер 27
+            </div>
 
-        <p class="mt-4 text-sm text-gray-500">
-          Hello I am from {town} and I serve the people of the city.
+            <div class="text-lg text-gray-600">
+              <img
+                src="/src/assets/4.png"
+                alt="Phone Icon"
+                class="w-8 h-8 mr-2 inline-block"
+              />
+              088 279 3456
+            </div>
+
+            <div class="text-lg text-blue-600 hover:underline">
+              <img
+                src="/src/assets/2.png"
+                alt="Email Icon"
+                class="w-8 h-8 mr-2 inline-block"
+              />
+              alfred@gothamcity.com
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider to separate header from bio -->
+        <hr class="border-t border-gray-500 mb-6" />
+
+        <!-- Description -->
+        <p class="mb-6">
+          <img src="/src/assets/5.png" alt="Suitcase Icon" class="w-8 h-8 mr-2 inline-block"/>
+          <span class="text-xl text-gray-800 font-semibold">Административно право</span>
+          <br />
+          Нашият екип предлага правна помощ при обжалване на наказателни постановления
+          и административни актове срещу държавни органи като КАТ, НАП, КЗП, КЗЛД
+          и местни власти. Банково право Разрешаваме различни въпроси свързани с
+          кредити – потребителски, фирмени, ипотечни и други. Освен това предоставяме
+          консултации по условията на кредитни договори.
         </p>
 
-        <ul class="mt-4 space-y-2">
-          <li><a href="#" class="text-blue-500 hover:underline">LinkedIn</a></li>
-          <li><a href="#" class="text-blue-500 hover:underline">GitHub</a></li>
+
+        <p class="mb-6">
+          <img src="/src/assets/6.png" alt="Suitcase Icon" class="w-8 h-8 mr-2 inline-block"/>
+          <span class="text-xl text-gray-800 font-semibold">Вещно право</span>
+          <br />
+          Ако планирате покупка на недвижим имот или имате правен спор,
+          свързан с такъв, нашите юристи ще ви консултират какви стъпки да предприемете.
+        </p>
+
+        
+        <p class="mb-6">
+          <img src="/src/assets/7.png" alt="Suitcase Icon" class="w-8 h-8 mr-2 inline-block"/>
+          <span class="text-xl text-gray-800 font-semibold">Търговско и дружествено право</span>
+          <br />
+          Ако имате нужда от регистрация на юридическо
+          лице, НПО или търговска марка, нашите юристи са на ваше разположение. Също
+          така предлагаме помощ при съставяне на търговски договори.
+        </p>
+
+        <p class="mb-6">
+          <img src="/src/assets/8.png" alt="Suitcase Icon" class="w-8 h-8 mr-2 inline-block"/>
+          <span class="text-xl text-gray-800 font-semibold">Правни консултации</span>
+          <br />
+          Ние предоставяме правни консултации по всякакви въпроси,
+          свързани с българското законодателство и юридическата практика. Може да
+          се доверите на адвокатска кантора "Алфред" за надеждни съвети.
+        </p>
+
+
+      </div>
+
+
+
+
+      
+
+      <!-- Right column: Profile Photo, Practice Areas, etc. -->
+      <aside class="md:w-1/3 bg-white/85 p-6 shadow-lg mt-8 md:mt-0">
+        <!-- Profile Image -->
+        <img
+          src="/src/assets/alfred.jpg"
+          alt="Profile Photo"
+          class="w-full h-auto mb-4"
+        />
+
+        <!-- Practice Areas -->
+        <h2 class="text-xl font-bold mb-2">Професионални области</h2>
+        <ul class="list-disc list-inside mb-4">
+          <li>Корпоративно право</li>
+          <li>Договорно право</li>
+          <li>Интелектуална собственост</li>
+          <li>Трудово право</li>
+          <li>Регулации и спазване на законите</li>
         </ul>
 
+        <!-- Education & Admissions -->
+        <h2 class="text-xl font-bold mb-2">Образование и опит</h2>
+        <ul class="list-disc list-inside mb-4">
+          <li>J.D., University of Gotham Law</li>
+          <li>Над 10 години опит в търговското и корпоративно право </li>
+        </ul>
+
+        <h2 class="text-xl font-bold mb-2">Професионални асоциации</h2>
+        <ul class="list-disc list-inside">
+          <li>Член на Българската адвокатска колегия</li>
+          <li>Член на Асоциацията на адвокатите по търговско право</li>
+        </ul>
       </aside>
 
-      <!-- Main Content -->
-      <section class="col-span-8 bg-white p-6 rounded-lg shadow-md">
-        <slot />
-      </section>
-      
-    </main>
 
+
+    </main>
+  </div>
 </BaseLayout>
