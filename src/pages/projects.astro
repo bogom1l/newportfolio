@@ -10,35 +10,27 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   >
     <!-- Centered content area -->
     <main class="container mx-auto px-4 py-8 md:flex md:gap-8">
-
-
-
-
-
-
-      
       <!-- Left column: Professional Info -->
-      <div class="md:w-2/3 bg-white/85 p-6 shadow-lg">
-        <!-- "Professionals" label or heading -->
-        <div class="mb-4">
-          <span
-            class="inline-block bg-blue-600 text-white px-3 py-1 text-sm font-semibold uppercase rounded"
-          >
-            Professionals
-          </span>
-        </div>
-
+      <div class="md:w-2/3 bg-white/85 p-6 shadow-lg px-14 py-15">
         <!-- Header Info: Name, Membership, Location, Email -->
-        <div class="text-center mb-6">
-          <h1 class="text-5xl font-bold mb-2">J. Scott Gilbert</h1>
-          <div class="flex justify-center items-center space-x-4">
-            <span class="text-xl font-semibold text-gray-700">Member</span>
-            <span class="text-sm text-gray-600">Jackson</span>
-            <span class="text-sm text-blue-600">
-              <a href="mailto:sgilbert@watkinseager.com" class="hover:underline"
-                >sgilbert@watkinseager.com</a
-              >
-            </span>
+        <div class="text-left mb-6">
+          <h1 class="text-5xl font-bold mb-2">Alfred Batman</h1>
+          <div class="space-y-2">
+            <div class="text-3xl font-semibold text-gray-600">Lawyer</div>
+            <div class="text-lg text-gray-600 mt-6">
+              <!-- Address Icon (using img tag) -->
+              <img
+              src="/src/assets/1.png"
+              alt="Address Icon"
+              class="w-5 h-5 mr-2 inline-block"
+            />
+              
+              Fifth Alley Street, Gotham City
+            </div>
+  
+            <div class="text-sm text-blue-600 hover:underline">
+              alfred@gothamcity.com
+            </div>
           </div>
         </div>
 
@@ -47,8 +39,33 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
         <!-- Bio / Description -->
         <p class="mb-6">
-          Scott Gilbert is a lawyer who represents companies and individuals in
-          complex litigation and transportation law...
+          Alfred Wayne is a distinguished litigator specializing in complex
+          litigation across both state and federal courts in Gotham City. Alfred
+          began his illustrious career as a prosecutor in the Gotham District
+          Attorney's Office, serving with distinction for 15 years before
+          establishing his own firm, Wayne & Associates, in 2018. Throughout his
+          career, he has presided over numerous high-profile cases and managed
+          appeals that have tested even the most seasoned legal minds in the
+          city. Beyond traditional litigation, Alfred also offers strategic
+          counsel to major corporations and nonprofit organizations, often
+          advising on matters where the interests of Gotham’s citizens—and its
+          darker underbelly—intersect. Admitted to the Gotham Bar in 2002 and
+          later to the New Jersey Bar in 2010, Alfred’s practice spans internal
+          corporate investigations, white-collar criminal defense, and complex
+          civil litigation, as well as administrative proceedings before
+          Gotham’s regulatory bodies. His extensive experience in prosecuting
+          and defending cases related to organized crime, financial fraud, and
+          asset recovery has solidified his reputation as a pillar of Gotham’s
+          legal community. During his tenure with the Gotham DA’s Office, Alfred
+          was a frequent lecturer on the intricacies of corporate fraud and
+          organized crime, delivering seminars at the city’s premier legal
+          training facilities. He also played a key role in managing asset
+          forfeiture and money laundering cases that targeted some of Gotham’s
+          most notorious criminal networks. In addition to his legal practice,
+          Alfred imparts his vast knowledge as a visiting professor at Gotham
+          University School of Law, mentoring the next generation of legal
+          professionals dedicated to upholding justice in a city that never
+          sleeps.
         </p>
 
         <!-- Example sub-sections -->
@@ -78,9 +95,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           Published articles in the Journal of Transportation Law...
         </p>
       </div>
-
-
-
 
       <!-- Right column: Profile Photo, Practice Areas, etc. -->
       <aside class="md:w-1/3 bg-white/85 p-6 shadow-lg mt-8 md:mt-0">
@@ -116,5 +130,4 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </aside>
     </main>
   </div>
-
 </BaseLayout>
