@@ -6,14 +6,18 @@ const email = "alfred@beagle.com";
 
 <BaseLayout>
 
-  <section class="py-8">
+  <main class="container mx-auto px-auto py-8 md:flex md:gap-8">
+    <div class="md:w-full bg-white/80 p-6 shadow-lg px-10 py-6 rounded-3xl">
 
-    <h1 class="text-3xl font-bold mb-4">Contact Me</h1>
+      <section class="py-8">
+        <h1 class="text-3xl font-bold mb-4">Contact Me</h1>
+        <p>
+          You can reach me via email at <a href="mailto:your.email@example.com" class="text-blue-500 hover:underline">{email}</a>.
+        </p>
+      </section>
 
-    <p>
-      You can reach me via email at <a href="mailto:your.email@example.com" class="text-blue-500 hover:underline">{email}</a>.
-    </p>
-    
-  </section>
+    </div>
+
+  </main>
 
 </BaseLayout>

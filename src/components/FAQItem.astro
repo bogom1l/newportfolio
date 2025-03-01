@@ -7,8 +7,8 @@ export interface Props {
 const { question, answer } = Astro.props;
 ---
 
-<details class="border border-gray-300 p-4 rounded-lg transition-all duration-300 hover:shadow-md">
-  <summary class="cursor-pointer font-semibold text-lg flex items-center gap-2">
+<details class="border border-gray-500 p-4 rounded-lg transition-all duration-300 hover:shadow-md">
+  <summary class="cursor-pointer font-semibold text-xl flex items-center gap-2">
     
     <svg class="w-5 h-5 text-blue-600 transform transition-transform duration-300 hover:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -18,6 +18,6 @@ const { question, answer } = Astro.props;
     
   </summary>
 
-  <p class="mt-2 text-gray-700">{answer}</p>
+  <p class="mt-2 text-gray-900 text-lg">{answer}</p>
 
 </details>
