@@ -3,12 +3,58 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-  <section class="py-8">
-    <h1 class="text-3xl font-bold mb-4">FAQ</h1>
+  <!-- Full-page background container -->
+  <main class="container mx-auto px-0 py-8 md:flex md:gap-8">
+    <!-- Left column: Professional Info -->
+    <div class="md:w-3/3 bg-white/75 p-6 shadow-lg px-14 py-15">
+      <!-- Header Info -->
+      <div class="text-center mb-6">
+        <h1 class="text-3xl font-bold mb-5">Често Задавани Въпроси</h1>          
+      </div>
+      <!-- Divider to separate header from bio -->
+      <hr class="border-t border-gray-500 mb-6" />
+      
+      <!-- FAQ Section -->
+      <div class="space-y-4">
+        <details class="border border-gray-300 p-4 rounded-lg transition-all duration-300 hover:shadow-md">
+          <summary class="cursor-pointer font-semibold text-lg">Какви правни услуги предоставяте?</summary>
+          <p class="mt-2 text-gray-700">Нашата кантора предлага правна помощ в следните области: гражданско право, търговско право, административно право, трудово право, семейно право и защита на потребителите.</p>
+        </details>
 
-    <p>FAQ1</p>
-    <p>FAQ2</p>
-    <p>FAQ31</p>
-    <p>FAQ4</p>
-  </section>
+        <details class="border border-gray-300 p-4 rounded-lg transition-all duration-300 hover:shadow-md">
+          <summary class="cursor-pointer font-semibold text-lg">Как се определят цените на услугите?</summary>
+          <p class="mt-2 text-gray-700">Цената зависи от сложността на случая, необходимото време и приложимите разпоредби. Някои услуги имат фиксирани такси, докато други се изчисляват на час или според индивидуална договорка.</p>
+        </details>
+
+        <details class="border border-gray-300 p-4 rounded-lg transition-all duration-300 hover:shadow-md">
+          <summary class="cursor-pointer font-semibold text-lg">Какви документи трябва да донеса?</summary>
+          <p class="mt-2 text-gray-700">Това зависи от конкретния случай. Обикновено са необходими лична карта, договори, кореспонденция, съдебни документи или други доказателства, свързани с казуса. Ако не сте сигурни, ще ви насочим предварително.</p>
+        </details>
+
+        <details class="border border-gray-300 p-4 rounded-lg transition-all duration-300 hover:shadow-md">
+          <summary class="cursor-pointer font-semibold text-lg">Как се гарантира конфиденциалността на информацията?</summary>
+          <p class="mt-2 text-gray-700">Спазваме адвокатската тайна и всички разговори и документи, които ни предоставяте, остават строго поверителни. Вашата информация няма да бъде разкривана на трети лица без ваше изрично съгласие, освен в случаите, предвидени от закона.</p>
+        </details>
+
+        <hr/>
+        <h2>Правни въпроси</h2>
+
+        <details class="border border-gray-300 p-4 rounded-lg transition-all duration-300 hover:shadow-md">
+          <summary class="cursor-pointer font-semibold text-lg">Какви са правата ми при покупка на недвижим имот?</summary>
+          <p class="mt-2 text-gray-700">При покупка на недвижим имот е важно да проверите дали продавачът има законно право на собственост, дали върху имота няма тежести (ипотеки, възбрани, съдебни спорове) и дали всички документи са изрядни. Сключването на предварителен договор е стандартна практика, която гарантира сигурността на сделката преди финалното изповядване пред нотариус. Ние предлагаме правна проверка на имота, анализ на договора и съдействие при нотариалното прехвърляне, за да сте напълно защитени като купувач.</p>   
+        </details>
+
+        <details class="border border-gray-300 p-4 rounded-lg transition-all duration-300 hover:shadow-md">
+          <summary class="cursor-pointer font-semibold text-lg">Какви са стъпките за регистрация на фирма?</summary>
+          <p class="mt-2 text-gray-700">Регистрацията на фирма включва няколко основни стъпки: избор на правна форма (ЕООД, ООД, ЕТ и др.), изготвяне на учредителни документи, откриване на набирателна сметка (ако е необходимо), вписване в Търговския регистър и получаване на БУЛСТАТ номер. Всеки от тези етапи има свои специфики, а грешки в документите могат да доведат до забавяне или отказ на регистрацията. Ние можем да Ви съдействаме с подготовката на необходимите документи и подаването им в Търговския регистър, за да направим процеса бърз и безпроблемен.</p>
+        </details>
+
+        <details class="border border-gray-300 p-4 rounded-lg transition-all duration-300 hover:shadow-md">
+          <summary class="cursor-pointer font-semibold text-lg">Какво да направя, ако съм получил акт от КАТ?</summary>
+          <p class="mt-2 text-gray-700">Ако сте получили акт за нарушение на пътните правила, имате право да го обжалвате в 14-дневен срок от връчването му. За целта е необходимо да подадете жалба до съда по местоизвършване на нарушението, като трябва да изложите аргументите си за несъгласие. Важно е да прегледаме случая Ви, за да определим дали актът е съставен законосъобразно и какви са шансовете за успешно обжалване. Свържете се с нас, за да Ви помогнем в подготовката на жалбата и защитата Ви пред съда.</p>
+        </details>
+      </div>
+
+    </div>
+  </main>
 </BaseLayout>

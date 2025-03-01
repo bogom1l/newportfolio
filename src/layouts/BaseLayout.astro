@@ -19,7 +19,11 @@ import SlidingMenu from "../components/SlidingMenu.astro";
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body class="bg-gray-50 text-gray-900 min-h-screen flex flex-col">
+  <!-- <body class="bg-gray-50 text-gray-900 min-h-screen flex flex-col"> -->
+    <body class="bg-gray-50 text-gray-900 min-h-screen flex flex-col bg-cover bg-center" style="background-image: url('/src/assets/law2.jpg');">
+    <!-- Background image -->
+    <!-- <div class="min-h-screen w-full bg-cover bg-center" style="background-image: url('/src/assets/law.png');"> -->
+
     <Header />
     <SlidingMenu />
     <main class="flex-grow">
