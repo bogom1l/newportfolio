@@ -1,60 +1,139 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-
-const email = "alfred@beagle.com";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-
 <BaseLayout>
+  <main class="container mx-auto px-6 py-12 md:py-24">
 
 
-  <main class="container mx-auto px-auto py-8 md:flex md:gap-8">
-    <div class="md:w-full bg-white/80 p-6 shadow-lg px-10 py-6 rounded-3xl">
+   <!-- Header Section -->
+<section class="text-center bg-white/90 shadow-lg rounded-lg p-8 mb-12">
+  <h1 class="text-4xl font-bold text-blue-900 mb-4">За директни контакти</h1>
+  <p class="text-lg text-gray-800 mb-6">Не се колебайте да се свържете с нас!</p>
 
-      <section class="py-8">
-        <h1 class="text-3xl font-bold mb-4">Contact Me</h1>
-        <p>
-          You can reach me via email at <a href="mailto:your.email@example.com" class="text-blue-500 hover:underline">{email}</a>.
-        </p>
-      </section>
-
-      <div class="join">
-        <div>
-          <label class="input validator join-item">
-            <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></g></svg>
-            <input type="email" placeholder="mail@site.com" required/>
-          </label>
-          <div class="validator-hint hidden">Enter valid email address</div>
-        </div>
-        <button class="btn btn-neutral join-item">Join</button>
-      </div>
-
-      <br>
-      <br>
-      <br>
-      <br>
-
-      <fieldset class="fieldset w-xs bg-base-200 border border-base-300 p-4 rounded-box">
-        
-        <label class="fieldset-label">Title</label>
-        <input type="text" class="input" placeholder="My awesome page" />
-        
-        <label class="fieldset-label">Slug</label>
-        <input type="text" class="input" placeholder="my-awesome-page" />
-        
-        <label class="fieldset-label">Author</label>
-        <input type="text" class="input" placeholder="Name" />
-      </fieldset>
-      
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
 
-
-
+    <!-- Phone -->
+    <div class="flex items-center justify-center gap-3">
+      <!-- SVG Icon for Phone -->
+      <svg class="w-6 h-6 text-blue-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M18.48 22.926l-1.193.658c-6.979 3.621-19.082-17.494-12.279-21.484l1.145-.637 3.714 6.467-1.139.632c-2.067 1.245 2.76 9.707 4.879 8.545l1.162-.642 3.711 6.461zm-9.808-22.926l-1.68.975 3.714 6.466 1.681-.975-3.715-6.466zm8.613 14.997l-1.68.975 3.714 6.467 1.681-.975-3.715-6.467z"/>
+      </svg>
+      <!-- Phone Number -->
+      <span class="text-dark-blue text-2xl font-semibold">088 123 4567</span>
     </div>
 
 
 
-    
-  </main>
+    <!-- Email -->
+    <div class="flex items-center justify-center gap-3">
+      <!-- SVG Icon for Email -->
+      <svg class="w-6 h-6 text-blue-800" viewBox="0 0 8 6" xmlns="http://www.w3.org/2000/svg">
+        <path d="m0 0h8v6h-8zm.75 .75v4.5h6.5v-4.5zM0 0l4 3 4-3v1l-4 3-4-3z"/>
+      </svg>
+      <!-- Email Address -->
+      <span class="text-dark-blue text-2xl font-semibold">alfred@gotham.com</span>
+    </div>
 
+
+    <!-- Location (Address) -->
+    <div class="flex items-center justify-center gap-2">
+      <!-- New Location Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="w-6 h-6 text-blue-500">
+        <path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/>
+      </svg>
+      <!-- Address -->
+      <div class="text-dark-blue text-2xl font-semibold">
+        <span class="block">Ул. Джак Напиер 27</span>
+        <span class="block">гр. София, България</span>
+      </div>
+    </div>
+
+
+
+
+    <!-- Working Hours -->
+    <div class="flex items-center justify-center gap-3">
+      <!-- SVG Icon for Working Hours -->
+      <svg class="w-6 h-6 text-blue-500" fill="#000000" height="24" width="24" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 489 489">
+        <g>
+          <path d="M244.5,0C109.3,0,0,109.3,0,244.5S109.3,489,244.5,489S489,379.8,489,244.5S379.8,0,244.5,0z M265.3,447.4V437c0-11.4-9.4-20.8-20.8-20.8s-20.8,9.4-20.8,20.8v10.4c-95.8-9.8-172.3-86.3-182-182H51c11.4,0,20.8-9.4,20.8-20.8s-9.4-20.8-20.8-20.8h-9.3c9.8-95.8,86.3-172.3,182-182V51c0,11.4,9.4,20.8,20.8,20.8s20.8-9.4,20.8-20.8v-9.3c95.8,9.8,172.3,86.3,182,182H437c-11.4,0-20.8,9.4-20.8,20.8s9.4,20.8,20.8,20.8h10.4C437.6,361.1,361.1,437.6,265.3,447.4z"/>
+          <path d="M244.5,124.9c-11.4,0-20.8,9.4-20.8,20.8v91.5L129,353.8c-7.3,9.4-5.2,21.8,3.1,29.1c11.6,8.5,23.9,2.1,28.1-3.1l101-122.8c2.1-3.1,4.2-7.3,4.2-12.5v-98.8C265.3,134.2,256,124.9,244.5,124.9z"/>
+        </g>
+      </svg>
+      <!-- Working Hours -->
+      <div class="text-dark-blue text-2xl font-semibold">
+        <span class="block">Понеделник - Петък</span>
+        <span class="block">09:00 - 18:00</span>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+</section>
+
+
+    <!-- Contact Form Section -->
+    <section class="bg-white/90 shadow-lg rounded-lg p-8 mb-12">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6">За контакти с адвокатска кантора Готъм</h2>
+      <p class="text-lg text-gray-800 mb-6">Ако имате нужда от консултация или помощ от адвокат по конкретен правен казус, може да се свържете с нас, като използвате формата за контакт.</p>
+
+      <form action="#" method="POST">
+
+      <!-- Name Field with Icon -->
+      <div class="relative mb-5">
+        <input type="text" id="name" class="w-md pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500" placeholder="Enter your name" />
+        <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-600">
+          <i class="fas fa-user"></i>
+        </span>
+      </div>
+    
+        <!-- Email Field with Icon -->
+      <div class="relative mb-5">
+        <input type="email" id="email" class="w-md pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500" placeholder="Enter your email" />
+        <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-600">
+          <i class="fas fa-envelope"></i>
+        </span>
+      </div>
+                
+      <!-- Message Field with Icon -->
+      <div class="relative">
+        <textarea id="message" class="w-full max-w-full h-32 pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500" placeholder="Enter your message"></textarea>
+        <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-600">
+          <i class="fas fa-comment"></i>
+        </span>
+      </div>
+
+
+      <!-- Submit Button -->
+      <button type="submit" class="mt-6 px-7 py-4 bg-[#1d2d50] text-white font-semibold rounded-md hover:bg-[#4caf50] transition-all duration-300 shadow-lg">
+        Send Message
+      </button>
+      
+      
+
+        
+      </form>
+    </section>
+
+
+
+
+    <!-- Map Section -->
+    <section class="mb-12">
+      <div class="relative w-full h-96 rounded-lg shadow-lg overflow-hidden">
+        <!-- Google Map Embed for Bulgaria -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7417.87450457295!2d25.4854!3d42.7333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a00196c54ab40f%3A0xf70d835a8b60b404!2sBulgaria!5e0!3m2!1sen!2sbg!4v1632748577894!5m2!1sen!2sbg"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </section>
+    
+
+  </main>
 </BaseLayout>
