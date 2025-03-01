@@ -21,6 +21,9 @@ import SlidingMenu from "../components/SlidingMenu.astro";
     <!-- daisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 
+    <!-- Flowbite CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    
   </head>
 
   <body class="bg-gray-50 text-gray-900 min-h-screen flex flex-col bg-cover bg-center" style="background-image: url('/src/assets/law9.jpg'); background-attachment: fixed;">
@@ -30,7 +33,12 @@ import SlidingMenu from "../components/SlidingMenu.astro";
       <slot />
     </main>
     <Footer />
+
     <script src="/src/scripts/sliding-menu.js" defer></script>
+
+    <!-- Flowbite CDN  -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
   </body>
 
 </html>
