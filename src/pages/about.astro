@@ -3,117 +3,120 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-
   <!-- Full-page background container -->
 
-    <!-- Centered content area -->
-    <main class="container mx-auto px-4 py-8 md:flex md:gap-8">
-      <!-- Left column: Professional Info -->
-      <div class="md:w-2/3 bg-white/85 p-6 shadow-lg px-14 py-15">
-        <!-- Header Info -->
-        <div class="text-left mb-6">
-          <h1 class="text-5xl font-bold mb-2">Алфред Бийгъл</h1>
+  <!-- Centered content area -->
+  <main class="container mx-auto px-4 py-8 md:flex md:gap-8">
+    <!-- Left column: Professional Info -->
+    <div class="md:w-2/3 bg-white/85 p-6 shadow-lg px-14 py-15">
+      <!-- Header Info -->
+      <div class="text-left mb-6">
+        <h1 class="text-5xl font-bold mb-2">Алфред Бийгъл</h1>
 
-          <div class="text-3xl font-semibold text-gray-600 mt-4">Адвокат</div>
+        <div class="text-3xl font-semibold text-gray-600 mt-4">Адвокат</div>
 
-          <div class="space-y-2">
-            <div class="text-lg text-yellow-900 mt-8 hover:underline">
-              <i class="fa-solid fa-location-dot text-2xl w-8 h-8 mr-2 inline-block"></i>
-              Готъм Сити, ул. Джак Напиер 27
-            </div>
+        <div class="space-y-2">
+          <div class="text-lg text-yellow-900 mt-8 hover:underline">
+            <i
+              class="fa-solid fa-location-dot text-2xl w-8 h-8 mr-2 inline-block"
+            ></i>
+            Готъм Сити, ул. Джак Напиер 27
+          </div>
 
-            <div class="text-lg text-green-700 hover:underline">
-              <i class="fa-solid fa-phone text-2xl w-8 h-8 mr-2 inline-block"></i>
-              088 012 3456
-            </div>
+          <div class="text-lg text-green-700 hover:underline">
+            <i class="fa-solid fa-phone text-2xl w-8 h-8 mr-2 inline-block"></i>
+            088 012 3456
+          </div>
 
-            <div class="text-lg text-blue-800 hover:underline">
-              <i class="fa-solid fa-envelope text-2xl w-8 h-8 mr-2 inline-block"></i>
-              alfred@gothamcity.com
-            </div>
+          <div class="text-lg text-blue-800 hover:underline">
+            <i class="fa-solid fa-envelope text-2xl w-8 h-8 mr-2 inline-block"
+            ></i>
+            alfred@gothamcity.com
           </div>
         </div>
-
-        <!-- Divider to separate header from bio -->
-        <hr class="border-t border-gray-500 mb-6" />
-
-        <!-- Description -->
-        <p class="mb-6">
-          <i class="fa-solid fa-toolbox text-2xl w-8 h-8 mr-2 inline-block"></i>
-          <span class="text-xl text-gray-800 font-semibold">Административно право</span>
-          <br />
-          Нашият екип предлага правна помощ при обжалване на наказателни постановления
-          и административни актове срещу държавни органи като КАТ, НАП, КЗП, КЗЛД
-          и местни власти. Банково право Разрешаваме различни въпроси свързани с
-          кредити – потребителски, фирмени, ипотечни и други. Освен това предоставяме
-          консултации по условията на кредитни договори.
-        </p>
-        
-
-
-        <p class="mb-6">
-          <i class="fa-solid fa-house text-2xl w-8 h-8 mr-2 inline-block"></i>
-          <span class="text-xl text-gray-800 font-semibold">Вещно право</span>
-          <br />
-          Ако планирате покупка на недвижим имот или имате правен спор,
-          свързан с такъв, нашите юристи ще ви консултират какви стъпки да предприемете.
-        </p>
-
-        
-        <p class="mb-6">
-          <i class="fa-solid fa-handshake text-2xl w-8 h-8 mr-2 inline-block"></i>
-          <span class="text-xl text-gray-800 font-semibold">Търговско и дружествено право</span>
-          <br />
-          Ако имате нужда от регистрация на юридическо
-          лице, НПО или търговска марка, нашите юристи са на ваше разположение. Също
-          така предлагаме помощ при съставяне на търговски договори.
-        </p>
-
-        <p class="mb-6">
-          <i class="fa-solid fa-person-military-to-person text-2xl w-8 h-8 mr-2 inline-block"></i>
-          <span class="text-xl text-gray-800 font-semibold">Правни консултации</span>
-          <br />
-          Ние предоставяме правни консултации по всякакви въпроси,
-          свързани с българското законодателство и юридическата практика. Може да
-          се доверите на адвокатска кантора "Алфред" за надеждни съвети.
-        </p>
-
-
       </div>
 
+      <!-- Divider to separate header from bio -->
+      <hr class="border-t border-gray-500 mb-6" />
 
+      <!-- Description -->
+      <p class="mb-6">
+        <i class="fa-solid fa-toolbox text-2xl w-8 h-8 mr-2 inline-block"></i>
+        <span class="text-xl text-gray-800 font-semibold"
+          >Административно право</span
+        >
+        <br />
+        Нашият екип предлага правна помощ при обжалване на наказателни постановления
+        и административни актове срещу държавни органи като КАТ, НАП, КЗП, КЗЛД и
+        местни власти. Банково право Разрешаваме различни въпроси свързани с кредити
+        – потребителски, фирмени, ипотечни и други. Освен това предоставяме консултации
+        по условията на кредитни договори.
+      </p>
 
-      <!-- Right column: Profile Photo, Practice Areas, etc. -->
-      <aside class="md:w-1/3 bg-white/85 p-6 shadow-lg mt-8 md:mt-0">
-        <!-- Profile Image -->
-        <img src="/src/assets/alfred.jpg" alt="Profile Photo" class="w-auto h-auto mb-4"/>
+      <p class="mb-6">
+        <i class="fa-solid fa-house text-2xl w-8 h-8 mr-2 inline-block"></i>
+        <span class="text-xl text-gray-800 font-semibold">Вещно право</span>
+        <br />
+        Ако планирате покупка на недвижим имот или имате правен спор, свързан с такъв,
+        нашите юристи ще ви консултират какви стъпки да предприемете.
+      </p>
 
-        <!-- Practice Areas -->
-        <h2 class="text-xl font-bold mb-2">Професионални области</h2>
-        <ul class="list-disc list-inside mb-4">
-          <li>Корпоративно право</li>
-          <li>Договорно право</li>
-          <li>Интелектуална собственост</li>
-          <li>Трудово право</li>
-          <li>Регулации и спазване на законите</li>
-        </ul>
+      <p class="mb-6">
+        <i class="fa-solid fa-handshake text-2xl w-8 h-8 mr-2 inline-block"></i>
+        <span class="text-xl text-gray-800 font-semibold"
+          >Търговско и дружествено право</span
+        >
+        <br />
+        Ако имате нужда от регистрация на юридическо лице, НПО или търговска марка,
+        нашите юристи са на ваше разположение. Също така предлагаме помощ при съставяне
+        на търговски договори.
+      </p>
 
-        <!-- Education & Admissions -->
-        <h2 class="text-xl font-bold mb-2">Образование и опит</h2>
-        <ul class="list-disc list-inside mb-4">
-          <li>J.D., University of Gotham Law</li>
-          <li>Над 10 години опит в търговското и корпоративно право </li>
-        </ul>
+      <p class="mb-6">
+        <i
+          class="fa-solid fa-person-military-to-person text-2xl w-8 h-8 mr-2 inline-block"
+        ></i>
+        <span class="text-xl text-gray-800 font-semibold"
+          >Правни консултации</span
+        >
+        <br />
+        Ние предоставяме правни консултации по всякакви въпроси, свързани с българското
+        законодателство и юридическата практика. Може да се доверите на адвокатска
+        кантора "Алфред" за надеждни съвети.
+      </p>
+    </div>
 
-        <h2 class="text-xl font-bold mb-2">Професионални асоциации</h2>
-        <ul class="list-disc list-inside">
-          <li>Член на Българската адвокатска колегия</li>
-          <li>Член на Асоциацията на адвокатите по търговско право</li>
-        </ul>
-      </aside>
+    <!-- Right column: Profile Photo, Practice Areas, etc. -->
+    <aside class="md:w-1/3 bg-white/85 p-6 shadow-lg mt-8 md:mt-0">
+      <!-- Profile Image -->
+      <img
+        src="/src/assets/alfred.jpg"
+        alt="Profile Photo"
+        class="w-auto h-auto mb-4"
+      />
 
+      <!-- Practice Areas -->
+      <h2 class="text-xl font-bold mb-2">Професионални области</h2>
+      <ul class="list-disc list-inside mb-4">
+        <li>Корпоративно право</li>
+        <li>Договорно право</li>
+        <li>Интелектуална собственост</li>
+        <li>Трудово право</li>
+        <li>Регулации и спазване на законите</li>
+      </ul>
 
+      <!-- Education & Admissions -->
+      <h2 class="text-xl font-bold mb-2">Образование и опит</h2>
+      <ul class="list-disc list-inside mb-4">
+        <li>J.D., University of Gotham Law</li>
+        <li>Над 10 години опит в търговското и корпоративно право</li>
+      </ul>
 
-    </main>
-  </div>
+      <h2 class="text-xl font-bold mb-2">Професионални асоциации</h2>
+      <ul class="list-disc list-inside">
+        <li>Член на Българската адвокатска колегия</li>
+        <li>Член на Асоциацията на адвокатите по търговско право</li>
+      </ul>
+    </aside>
+  </main>
 </BaseLayout>

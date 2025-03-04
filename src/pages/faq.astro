@@ -7,21 +7,23 @@ import { faqItems } from "../data/faqData.ts";
 <BaseLayout>
   <main class="container mx-auto px-4 py-8 md:flex md:gap-8">
     <div class="md:w-3/3 bg-white/80 p-6 shadow-lg px-6 py-8 rounded-lg">
-      <h1 class="text-3xl font-bold mb-5 text-center">Често Задавани Въпроси</h1>
+      <h1 class="text-3xl font-bold mb-5 text-center">
+        Често Задавани Въпроси
+      </h1>
       <hr class="border-t border-gray-500 mb-6" />
 
       <div class="space-y-4">
         {
-          faqItems.map(
-              (faq) => (
-                <FAQItem question={faq.question} answer={faq.answer} />
-              )
-            )
+          faqItems.map((faq) => (
+            <FAQItem question={faq.question} answer={faq.answer} />
+          ))
         }
       </div>
 
-       <!-- Bonus Question Section -->
-       <div class="mt-6 p-4 border border-blue-600 bg-white/60 rounded-lg text-center">
+      <!-- Bonus Question Section -->
+      <div
+        class="mt-6 p-4 border border-blue-600 bg-white/60 rounded-lg text-center"
+      >
         <p class="text-blue-800 text-xl font-semibold">
           Имате други въпроси? Не се колебайте да се свържете с нас!
         </p>
@@ -31,10 +33,13 @@ import { faqItems } from "../data/faqData.ts";
       </div>
 
       <div class="text-center">
-        <a href="/contact" class="mt-4 inline-block px-14 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+        <a
+          href="/contact"
+          class="mt-4 inline-block px-14 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+        >
           Свържете се с нас
         </a>
+      </div>
     </div>
-
   </main>
 </BaseLayout>
