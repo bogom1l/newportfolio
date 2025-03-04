@@ -4,21 +4,21 @@ export const practiceAreas = [
       title: "Семейно право",
       url: "family-law",
       description: "Управление на разводи, въпроси по попечителство и семейни спорове с внимание и опит.",
-      image: "/public/images/family-law.jpg"
+      image: "/images/family-law.jpg"
     },
     {
       id: 2,
       title: "Криминална защита",
       url: "criminal-defense",
       description: "Предоставяне на здрави защитни стратегии за различни криминални обвинения.",
-      image: "/public/images/criminal-defense.jpg"
+      image: "/images/criminal-defense.jpg"
     },
     {
       id: 3,
       title: "Имотно право",
       url: "real-estate-law",
       description: "Експертно съдействие при имотни сделки, спорове и регулации.",
-      image: "/public/images/real-estate-law.jpg"
+      image: "/images/real-estate-law.jpg"
     },
     {
       id: 4,
