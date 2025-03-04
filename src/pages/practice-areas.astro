@@ -1,21 +1,37 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-
-const name = "Alfred";
-const profession = "Lawyer";
-const town = "Shumen";
+import { practiceAreas } from "../data/practiceAreas.ts";
 ---
 
 <BaseLayout>
+  <main class="container mx-auto py-8">
+    <h1 class="text-3xl font-bold mb-6 text-center text-white">
+      Професионални области
+    </h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {
+        practiceAreas.map((area) => (
+          <div class="card w-full bg-base-100 shadow-xl border border-blue-300">
+            <figure>
+              <img src={area.image} alt={area.title} class="w-full h-48 object-cover"/>
+            </figure>
 
-  <main class="container mx-auto px-auto py-8 md:flex md:gap-8">
-    <div class="md:w-full bg-white/80 p-6 shadow-lg px-10 py-6 rounded-2xl">
+            <div class="card-body">
+              <h2 class="card-title text-xl">{area.title}</h2>
 
-      <p class="text-lg text-gray-700">Totally different style</p>
+              <p class="text-lg">{area.description}</p>
 
+              <div class="card-actions justify-end">
+                <a href={`/practice/${area.id}`} class="btn btn-primary">
+                  Научи повече
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+        ))
+      }
     </div>
-
-
   </main>
-
 </BaseLayout>
