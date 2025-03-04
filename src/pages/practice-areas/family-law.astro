@@ -3,13 +3,77 @@ import BaseLayout from "../../layouts/BaseLayout.astro"
 ---
 
 <BaseLayout>
-  <main class="container mx-auto px-4 py-8 md:flex md:gap-8">
+  <main class="container mx-auto px-4 py-12">
 
-    <div class="md:w-full bg-white/85 p-6 shadow-lg px-14 py-15">
-    
-      <p> text </p>
+    <!-- Heading Section -->
+    <section class="text-center glass mb-12 p-6 rounded-lg shadow-lg">
+      <h1 class="text-4xl font-bold text-gray-200 mb-4">Семейно и наследствено право</h1>
+      <p class="text-lg text-gray-300">Консултации и правна помощ по всички въпроси, свързани със семейни и наследствени отношения</p>
+    </section>
 
-    </div>
-    
+    <!-- Main Content Section -->
+    <section class="bg-white/85 p-8 rounded-lg shadow-lg">
+
+      <h2 class="text-2xl font-semibold text-gray-800 mb-6">Нашите услуги включват:</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+        <!-- Divorce Services -->
+        <div class="service-card">
+          <h3 class="text-xl font-semibold text-gray-800">Разводи</h3>
+          <ul class="list-disc pl-5 text-gray-600">
+            <li>Развод по взаимно съгласие</li>
+            <li>Развод по общ исков ред</li>
+            <li>Имуществени въпроси при разтрогване на брака</li>
+          </ul>
+        </div>
+
+        <!-- Marriage Agreement Services -->
+        <div class="service-card">
+          <h3 class="text-xl font-semibold text-gray-800">Брачен договор</h3>
+          <ul class="list-disc pl-5 text-gray-600">
+            <li>Сключване и промяна на брачен договор</li>
+            <li>Изготвяне на допълнителни споразумения за изменение на брачен договор</li>
+            <li>Иск за получаване на по-голям дял от имуществото</li>
+          </ul>
+        </div>
+
+
+        <!-- Special Legal Requests -->
+        <div class="service-card">
+          <h3 class="text-xl font-semibold text-gray-800">Специализирани услуги</h3>
+          <ul class="list-disc pl-5 text-gray-600">
+            <li>Разрешение за разпореждане с имуществото на малолетни и непълнолетни лица</li>
+            <li>Пътуване на деца в чужбина и издаване на необходимите документи</li>
+            <li>Разрешаване на спорове при липса на съгласие между родителите</li>
+          </ul>
+        </div>
+
+        <!-- Inheritance Services -->
+        <div class="service-card">
+          <h3 class="text-xl font-semibold text-gray-800">Наследствени въпроси</h3>
+          <ul class="list-disc pl-5 text-gray-600">
+            <li>Консултации относно наследяване по закон или завещание</li>
+            <li>Изготвяне на завещания</li>
+            <li>Отваряне и оспорване на завещания</li>
+            <li>Съдебна и извънсъдебна делба на наследство</li>
+          </ul>
+        </div>
+
+        <!-- Parent and Child Rights -->
+        <div class="service-card">
+          <h3 class="text-xl font-semibold text-gray-800">Родителски права</h3>
+          <ul class="list-disc pl-5 text-gray-600">
+            <li>Спорове за родителски права</li>
+            <li>Иск за издръжка на дете или съпруг</li>
+            <li>Иск за увеличение/намаляване на издръжка</li>
+          </ul>
+        </div>
+
+
+
+      </div>
+    </section>
+
   </main>
 </BaseLayout>
+

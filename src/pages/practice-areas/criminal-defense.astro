@@ -1,0 +1,83 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro"
+---
+
+<BaseLayout>
+  <main class="container mx-auto px-4 py-12">
+
+    <!-- Heading Section -->
+    <section class="text-center glass mb-12 p-6 rounded-lg shadow-lg">
+      <h1 class="text-4xl font-bold text-gray-200 mb-4">Криминална защита</h1>
+      <p class="text-lg text-gray-300">Консултации и правна помощ за защита по криминални дела и обвинения</p>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="bg-white/85 p-8 rounded-lg shadow-lg">
+
+      <h2 class="text-2xl font-semibold text-gray-800 mb-6">Нашите услуги включват:</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+        <!-- Criminal Defense Services -->
+        <div class="service-card">
+          <h3 class="text-xl font-semibold text-gray-800">Защита по обвинения в престъпления</h3>
+          <ul class="list-disc pl-5 text-gray-600">
+            <li>Представителство в съдебни дела за престъпления</li>
+            <li>Защита на лица обвинени в тежки престъпления</li>
+            <li>Консултации относно криминални обвинения и правата на обвиняемия</li>
+          </ul>
+        </div>
+
+        <!-- Traffic Offenses -->
+        <div class="service-card">
+          <h3 class="text-xl font-semibold text-gray-800">Престъпления по пътя</h3>
+          <ul class="list-disc pl-5 text-gray-600">
+            <li>Защита при обвинения за пътнотранспортни престъпления</li>
+            <li>Представителство при дела за шофиране в нетрезво състояние</li>
+            <li>Преглед на доказателства и оспорване на обвинения</li>
+          </ul>
+        </div>
+
+        <!-- White Collar Crimes -->
+        <div class="service-card">
+          <h3 class="text-xl font-semibold text-gray-800">Престъпления от финансово естество</h3>
+          <ul class="list-disc pl-5 text-gray-600">
+            <li>Защита по обвинения в корупция, измама и пране на пари</li>
+            <li>Консултации по финансови престъпления и корпоративна престъпност</li>
+            <li>Представителство при следствия и разследвания</li>
+          </ul>
+        </div>
+
+        <!-- Domestic Violence -->
+        <div class="service-card">
+          <h3 class="text-xl font-semibold text-gray-800">Домашно насилие</h3>
+          <ul class="list-disc pl-5 text-gray-600">
+            <li>Защита на обвиняеми в случаи на домашно насилие</li>
+            <li>Преглед на доказателства за неверни обвинения</li>
+            <li>Консултации относно правата и защита в такива случаи</li>
+          </ul>
+        </div>
+
+        <!-- Juvenile Offenses -->
+        <div class="service-card">
+          <h3 class="text-xl font-semibold text-gray-800">Престъпления на непълнолетни</h3>
+          <ul class="list-disc pl-5 text-gray-600">
+            <li>Защита на непълнолетни лица при обвинения в престъпления</li>
+            <li>Решения за възпитателни мерки и насоки за реабилитация</li>
+            <li>Представителство в съда за дела с участието на непълнолетни</li>
+          </ul>
+        </div>
+
+        <!-- Drug-Related Crimes -->
+        <div class="service-card">
+          <h3 class="text-xl font-semibold text-gray-800">Престъпления, свързани с наркотични вещества</h3>
+          <ul class="list-disc pl-5 text-gray-600">
+            <li>Защита при обвинения в притежание, търговия или употреба на наркотични вещества</li>
+            <li>Представителство в дела за незаконна търговия с наркотични вещества</li>
+            <li>Консултации и помощ при разследвания за наркотични престъпления</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</BaseLayout>

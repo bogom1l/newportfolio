@@ -37,7 +37,7 @@ export const practiceAreas = [
     {
       id: 6,
       title: "Интелектуална собственост",
-      url: "intellectual-propety",
+      url: "intellectual-property",
       description: "Защита на креативни идеи, търговски марки и иновации чрез експертни юридически съвети.",
       image: "src/assets/intellectual-property.jpg"
     },
