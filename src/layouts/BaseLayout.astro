@@ -1,7 +1,6 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import SlidingMenu from "../components/SlidingMenu.astro";
 ---
 
 <!DOCTYPE html>
@@ -32,13 +31,10 @@ import SlidingMenu from "../components/SlidingMenu.astro";
 
   <body class="bg-gray-50 text-gray-900 min-h-screen flex flex-col bg-cover bg-center" style="background-image: url('/images/law9.jpg'); background-attachment: fixed;">
     <Header />
-    <SlidingMenu />
     <main class="flex-grow">
       <slot />
     </main>
     <Footer />
-
-    <!-- <script src="/src/scripts/sliding-menu.js" defer></script> -->
 
     <!-- Flowbite CDN  -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
