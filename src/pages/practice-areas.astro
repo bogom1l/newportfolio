@@ -13,7 +13,11 @@ import { practiceAreas } from "../data/practiceAreas.ts";
         practiceAreas.map((area) => (
           <div class="card w-full bg-base-100 shadow-xl border border-blue-300">
             <figure>
-              <img src={area.image} alt={area.title} class="w-full h-48 object-cover"/>
+              <img
+                src={area.image}
+                alt={area.title}
+                class="w-full h-48 object-cover"
+              />
             </figure>
 
             <div class="card-body">
@@ -22,13 +26,12 @@ import { practiceAreas } from "../data/practiceAreas.ts";
               <p class="text-lg">{area.description}</p>
 
               <div class="card-actions justify-end">
-                <a href={`/practice/${area.id}`} class="btn btn-primary">
+                <a href={`/practice-areas/${area.url}`} class="btn btn-primary">
                   Научи повече
                 </a>
               </div>
-
+              
             </div>
-
           </div>
         ))
       }
