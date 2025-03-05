@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import "/public/global.css";
 ---
 
 <!DOCTYPE html>
@@ -16,7 +17,7 @@ import Footer from "../components/Footer.astro";
 
     <!-- Tailwind CSS CDN -->
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
 
     <!-- daisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
@@ -48,7 +49,9 @@ import Footer from "../components/Footer.astro";
     <script type="text/javascript">
       // Initialize EmailJS with your public key
       (function(){
-        emailjs.init("gKXmXTs4yO9iPRlqh");
+        emailjs.init({
+          publicKey: "gKXmXTs4yO9iPRlqh",
+        });
       })();
     
       // Add event listener to the form
@@ -57,6 +60,7 @@ import Footer from "../components/Footer.astro";
     
         emailjs.sendForm('service_vgmnt8b', 'template_roh1lgk', this)
           .then(function() {
+              console.log('SUCCESS!');
               alert('Message sent successfully!');
           }, function(error) {
               console.error('Failed to send message. Error: ', error);
