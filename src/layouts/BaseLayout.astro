@@ -39,6 +39,33 @@ import Footer from "../components/Footer.astro";
     <!-- Flowbite CDN  -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 
+    <!-- EmailJS CDN -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <!-- EmailJS -->
+    <script type="text/javascript">
+      // Initialize EmailJS with your public key
+      (function(){
+        emailjs.init("gKXmXTs4yO9iPRlqh");
+      })();
+    
+      // Add event listener to the form
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default submission
+    
+        emailjs.sendForm('service_vgmnt8b', 'template_roh1lgk', this)
+          .then(function() {
+              alert('Message sent successfully!');
+          }, function(error) {
+              console.error('Failed to send message. Error: ', error);
+              alert('Failed to send message. Please try again later.');
+          });
+      });
+    </script>
+    
+
   </body>
 
 </html>

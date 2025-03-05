@@ -111,55 +111,53 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         казус, може да се свържете с нас, като използвате формата за контакт.
       </p>
 
-      <form action="#" method="POST">
-        <!-- Name Field with Icon -->
+      
+      <!-- Contact Form -->
+      <form id="contact-form">
         <div class="relative mb-5">
-
           <input
-          type="text"
-          id="name"
-          class="w-full max-w-md pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500"
-          placeholder="Enter your name"
-        />
-        
-          <span
-            class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-600"
-          >
+            type="text"
+            id="name"
+            name="user_name" 
+            minlength="2"
+            required
+            class="w-full max-w-md pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500"
+            placeholder="Enter your name"
+          />
+          <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-600">
             <i class="fas fa-user"></i>
           </span>
         </div>
-
-        <!-- Email Field with Icon -->
+      
         <div class="relative mb-5">
-
           <input
-          type="email"
-          id="email"
-          class="w-full max-w-md pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500"
-          placeholder="Enter your email"
-        />
-        
-          <span
-            class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-600"
-          >
+            type="email"
+            id="email"
+            name="user_email"
+            minlength="8"
+            required
+            class="w-full max-w-md pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500"
+            placeholder="Enter your email"
+          />
+          <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-600">
             <i class="fas fa-envelope"></i>
           </span>
         </div>
-
-        <!-- Message Field with Icon -->
+      
         <div class="relative">
           <textarea
             id="message"
+            name="message"
+            minlength="5"
+            required
             class="w-full max-w-full h-32 pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500"
-            placeholder="Enter your message"></textarea>
-          <span
-            class="absolute left-3 top-1/6 transform -translate-y-1/2 text-gray-600"
-          >
+            placeholder="Enter your message"
+          ></textarea>
+          <span class="absolute left-3 top-1/6 transform -translate-y-1/2 text-gray-600">
             <i class="fas fa-comment"></i>
           </span>
         </div>
-
-        <!-- Submit Button -->
+      
         <button
           type="submit"
           class="mt-6 px-7 py-4 bg-[#1d2d50] text-white font-semibold rounded-md hover:bg-[#4caf50] transition-all duration-300 shadow-lg"
@@ -167,6 +165,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           Send Message
         </button>
       </form>
+      
+
+
+
+
     </section>
 
     <!-- Map Section -->
